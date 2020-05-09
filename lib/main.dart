@@ -19,7 +19,6 @@ class MyApp extends StatelessWidget {
         body: SafeArea(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               CircleAvatar(
                 radius: 50,
@@ -44,6 +43,48 @@ class MyApp extends StatelessWidget {
                   color: Colors.teal.shade50,
                   fontFamily: 'Source Sans Pro',
                   letterSpacing: 2.5,
+                ),
+              ),
+              SizedBox(
+                width: 150,
+                height: 20,
+                child: Divider(
+                  color: Colors.teal.shade100,
+
+                ),
+              ),
+              Card(
+                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    '+34 616 385 179',
+                    style: TextStyle(
+                      color: Colors.teal.shade900,
+                      fontFamily: 'Source Sans Pro',
+                      fontSize: 17,
+                    ),
+                  ),
+                ),
+              ),
+              Card(
+                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    'miguelmonteiroclaveri@gmail.com',
+                    style: TextStyle(
+                      color: Colors.teal.shade900,
+                      fontFamily: 'Source Sans Pro',
+                      fontSize: 17,
+                    ),
+                  ),
                 ),
               ),
             ],
